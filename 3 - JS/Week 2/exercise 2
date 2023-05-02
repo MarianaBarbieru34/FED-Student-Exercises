@@ -1,0 +1,14 @@
+function guessNumber() {
+  let randomNumber = Math.floor(Math.random() * 10) + 1;
+  let x = prompt("x is a number between 1 and 10");
+
+  if (x > randomNumber) {
+    alert("x is to high");
+  } else if (x < randomNumber) {
+    alert("x is to low");
+  } else {
+    alert("Congratulation ,you guessed the number!");
+  }
+}
+guessNumber(3);
+guessNumber(7);
